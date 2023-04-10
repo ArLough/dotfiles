@@ -9,6 +9,7 @@ brew upgrade
 
 apps=(
     coreutils
+    cask
     git
     grep
     hub
@@ -16,6 +17,9 @@ apps=(
     python
     tree
     wget
+    zsh
+    bash
+    youtube-dl
 )
 
 brew install "${apps[@]}"
