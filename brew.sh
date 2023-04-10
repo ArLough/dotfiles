@@ -20,6 +20,15 @@ apps=(
     zsh
     bash
     youtube-dl
+    qlcolorcode
+    qlstephen 
+    qlmarkdown 
+    quicklook-json 
+    qlimagesize 
+    suspicious-package 
+    apparency 
+    quicklookase 
+    qlvideo
 )
 
 brew install "${apps[@]}"
