@@ -19,6 +19,8 @@ apps=(
     vlc
     vanilla
     iina
+    istat-menus
+    cheatsheet
     qlcolorcode
     qlstephen 
     qlmarkdown 
