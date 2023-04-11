@@ -20,6 +20,7 @@ apps=(
     zsh
     bash
     youtube-dl
+    mackup
 )
 
 brew install "${apps[@]}"
