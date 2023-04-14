@@ -16,5 +16,6 @@
   	untrack = rm --cache --
 [core]
 	editor = nano
+	excludesfile = ~/dotfiles/git/.global_gitignore
 [init]
 	defaultBranch = main
