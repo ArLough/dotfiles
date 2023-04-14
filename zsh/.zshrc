@@ -78,7 +78,7 @@ DRACULA_DISPLAY_CONTEXT=1
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize z)
+plugins=(git colorize z thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,3 +110,5 @@ ZSH_COLORIZE_TOOL=chroma
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+eval $(thefuck --alias)

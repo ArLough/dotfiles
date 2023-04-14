@@ -21,7 +21,7 @@ apps=(
     bash
     youtube-dl
     mackup
-    pure
+    navi
 )
 
 brew install "${apps[@]}"
