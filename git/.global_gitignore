@@ -1,2 +1,8 @@
+# Mac      
 .DS_Store
+
+# VScode
 .vscode
+
+# Python
+*.pyc

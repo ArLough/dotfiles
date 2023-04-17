@@ -17,11 +17,14 @@ apps=(
     python
     tree
     wget
+    tldr
     zsh
     bash
     youtube-dl
     mackup
     navi
+    zsh-syntax-highlighting
+    zsh-autosuggestions
 )
 
 brew install "${apps[@]}"

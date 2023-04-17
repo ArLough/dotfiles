@@ -4,6 +4,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Set Editor
+export EDITOR=nano
+
 # Load the shell dotfiles, and then some:
 for file in ~/dotfiles/{aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
@@ -78,7 +81,12 @@ DRACULA_DISPLAY_CONTEXT=1
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize z thefuck)
+plugins=(git 
+		colorize 
+		z 
+		thefuck 
+		zsh-autosuggestions 
+		zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,3 +120,5 @@ ZSH_COLORIZE_TOOL=chroma
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval $(thefuck --alias)
+source /Users/aidanloughney/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

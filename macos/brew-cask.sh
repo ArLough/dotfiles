@@ -1,6 +1,12 @@
 # Install cask packages
 # Inspired by https://github.com/myshov/dotfiles/blob/master/install/brew-cask.sh
 
+# Necessary to install fonts
+brew tap homebrew/cask-fonts
+
+# Necessary to install casks
+brew tap homebrew/cask
+
 apps=(
     1password
     discord
@@ -30,6 +36,7 @@ apps=(
     apparency 
     quicklookase 
     qlvideo
+    font-source-code-pro
 )
 
 brew install "${apps[@]}" --cask
