@@ -20,6 +20,7 @@ unset file;
 ZSH_THEME="dracula"
 
 DRACULA_DISPLAY_CONTEXT=1
+DRACULA_DISPLAY_NEW_LINE=1
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
