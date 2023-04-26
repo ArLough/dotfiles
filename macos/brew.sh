@@ -9,22 +9,26 @@ brew upgrade
 
 apps=(
     coreutils
-    cask
-    git
+    cask # to install casks
+    git # scm
     grep
     hub
     httpie
-    python
+    python3 # Python dev
+    node # js package managment
+    openjdk # Java dev
+    ruby # Ruby necessary for homebrew
+    curl
     tree
     wget
     tldr
-    zsh
-    bash
-    youtube-dl
+    bash # macos bash is old
+    zsh # my preffered shell
+    youtube-dl # dowload yt videos from command line
     mackup
-    navi
-    zsh-syntax-highlighting
-    zsh-autosuggestions
+    navi # suggest commands
+    zsh-syntax-highlighting # better zsh syntax highlighting
+    zsh-autosuggestions # better zsh autosuggestions
 )
 
 brew install "${apps[@]}"
