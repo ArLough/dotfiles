@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# path to homebrew python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -84,8 +87,8 @@ DRACULA_DISPLAY_NEW_LINE=1
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git 
 		colorize 
-		z 
-		thefuck 
+		z
+		thefuck
 		zsh-autosuggestions 
 		zsh-syntax-highlighting)
 
@@ -123,3 +126,4 @@ ZSH_COLORIZE_TOOL=chroma
 eval $(thefuck --alias)
 source /Users/aidanloughney/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="/usr/local/sbin:$PATH"

@@ -20,3 +20,5 @@ Dotfiles repo to track a few of my configurations, work in progress
 ## Other Stuff I Found Helpful!
 - https://www.jakewiesler.com/blog/managing-dotfiles
   - Taught me how to use stow and syymlink files
+- http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/
+  - How to export iterm profile
