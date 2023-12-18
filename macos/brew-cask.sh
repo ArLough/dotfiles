@@ -10,10 +10,8 @@ brew tap homebrew/cask
 # Productivity
 brew install 1password --cask # Password Manager
 brew install obsidian --cask # Notes/Second Brain
-# brew install notion --cask # Calendar/Task Mangament
-# brew install raycast --cask # Better spotlight
 brew install raindropio --cask  # Bookmark manager
-# brew install ticktick --cask # Task Manager
+brew install 1password-cli --cask # Password manager
 
 # Entertainment
 brew install spotify --cask # Music
