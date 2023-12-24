@@ -1,0 +1,12 @@
+# Mac Apps
+
+## Shottr
+- Reassign keyboard shortcuts for shortcut to trigger shottr instead
+
+## Karabiner Elements
+- Sync over old configs
+
+## Powerlevel10k
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+

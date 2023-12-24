@@ -19,6 +19,7 @@ apps=(
     ruby # Ruby necessary for homebrew
     curl # get a file from an http server
     tree # display dirs as trees
+    fzf # fuzzy finder
     wget # internet file retriever
     htop # better top - interactive process viewer
     tldr # tldr of man pages
@@ -31,9 +32,8 @@ apps=(
     thefuck # correct last command
     zsh-syntax-highlighting # better zsh syntax highlighting
     zsh-autosuggestions # better zsh autosuggestions
-    # optional
-    # yarn - JavaScript package manager
-    # nvm - manage multiple node versions
+    yarn - JavaScript package manager
+    nvm - manage multiple node versions
 )
 
 brew install "${apps[@]}"
