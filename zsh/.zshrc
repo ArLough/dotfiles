@@ -93,6 +93,7 @@ plugins=(git
 		colorize 
 		z
 		fzf
+		fzf-tab
 		thefuck
 		zsh-autosuggestions 
 		zsh-syntax-highlighting)
@@ -128,9 +129,11 @@ ZSH_COLORIZE_TOOL=chroma
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+source $HOME/fzf-tab/fzf-tab.zsh
 eval $(thefuck --alias)
-source /Users/aidanloughney/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 export PATH="/usr/local/sbin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

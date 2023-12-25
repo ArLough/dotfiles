@@ -7,8 +7,7 @@ mcd () {
 }
 
 # Function to extract any compressed file
-extract ()
-{
+extract (){
 if [ -f $1 ] ; then
   case $1 in
     *.tar.gz)  tar xzf $1;;

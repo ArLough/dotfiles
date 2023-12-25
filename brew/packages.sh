@@ -1,13 +1,4 @@
-# Install Homebrew
-# Heavily inspired by https://github.com/myshov/dotfiles/blob/master/install/brew.sh
-
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
-brew upgrade
-
-# Install packages
-
-apps=(
+package=(
     coreutils
     cask # to install casks
     git # scm
@@ -26,17 +17,21 @@ apps=(
     bash # macos bash is old
     zsh # my preffered shell
     youtube-dl # dowload yt videos from command line
-    mackup # keeps macOS system files in sync
     navi # suggest commands
     trash # moves a file to trash as opposed to rm which permanently deletes
+    bat # better cat with syntax highlighting
     thefuck # correct last command
     zsh-syntax-highlighting # better zsh syntax highlighting
     zsh-autosuggestions # better zsh autosuggestions
-    yarn - JavaScript package manager
-    nvm - manage multiple node versions
+    yarn # JavaScript package manager
+    nvm # manage multiple node versions
+    git-delta # better git diff using bat
 )
 
-brew install "${apps[@]}"
+install_brew_packages(){
+    info "Installing packages ..."
+    brew install "${apps[@]}"
 
-# Git comes with diff-highlight, but isn't in the PATH
-ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" /usr/local/bin/diff-highlight
+    info "Cleaning up brew packages..."
+	brew cleanup
+    }
