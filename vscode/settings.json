@@ -1,36 +1,34 @@
 {
     "git.enableSmartCommit": true,
     "debug.onTaskErrors": "debugAnyway",
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "gruvbox-material-icon-theme",
     "workbench.editor.highlightModifiedTabs": true,
     "explorer.sortOrder": "type",
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 3,
-    "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 12,
+    "editor.fontSize": 16,
+    "editor.fontWeight": 400,
+    "terminal.integrated.fontSize": 14,
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "editor.lineHeight": 1.6,
+    "workbench.tree.indent": 20,
+    "customizeUI.activityBarHideSettings": true,
+    "customizeUI.listRowHeight": 30,
+    "customizeUI.titleBar": "inline",
+    "editor.guides.bracketPairs": "active",
+    "customizeUI.activityBar": "top",
+    "editor.minimap.showSlider": "always",
+    "workbench.list.smoothScrolling": true,
     "editor.fontFamily": "Source Code Pro, Monaco",
     "debug.console.fontFamily": "Source Code Pro, Monaco",
     "zenMode.centerLayout": false,
     "zenMode.fullScreen": false,
     "zenMode.hideLineNumbers": false,
-    "python.formatting.provider": "black",
-    "remote.SSH.useLocalServer": false,
-    "remote.SSH.lockfilesInTmp": true,
-    "remote.SSH.remotePlatform": {
-        "login.engin.umich.edu": "linux",
-        "localhost": "linux",
-        "clarity3.eecs.umich.edu": "linux"
-    },
-    "vsicons.dontShowNewVersionMessage": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "python.defaultInterpreterPath": "/usr/local/bin/python",
-    "[python]": {
-        "editor.formatOnType": true
-    },
     "terminal.external.osxExec": "Iterm2.app",
-    "window.zoomLevel": 2,
-    "redhat.telemetry.enabled": true,
-    "workbench.activityBar.location": "hidden"
-
-}
+    "workbench.activityBar.location": "top",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#ff9966",
+        "editorCursor.background": "#000000",
+        "terminalCursor.foreground": "#66ff99"
+      }
+    }

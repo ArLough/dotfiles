@@ -5,7 +5,7 @@ casks = (
 1password # Password Manager
 1password-cli
 obsidian # Notes/Second Brain
-raindropio  # Bookmark manager
+# raindropio  # Bookmark manager
 # Entertainment
 spotify # Music
 steam # Gaming
@@ -21,7 +21,7 @@ google-chrome
 visual-studio-code
 iterm2 # Terminal
 jetbrains-toolbox # Jetbrains installer
-# docker # Containerize for deployment
+docker # Containerize for deployment
 # utm # VM
 # postman # API testing
 # Video Player
@@ -32,10 +32,10 @@ istat-menus # Computer stats in menu bar
 itsycal # Nice calendar in menu bar
 cheatsheet # CMD to pull up shortcuts
 MonitorControl # Manage brightness on external display
-hiddenbar # Hide some menu bar items 
+hiddenbar # Hide some menu bar items
 keka # Unarchiver
 rectangle # Window Manager
-espanso # text expansion
+# espanso # text expansion
 authy # 2fa
 google-backup-and-sync # backup & sync
 # coconutbattery # battery health utility
@@ -52,7 +52,7 @@ qlstephen
 qlmarkdown
 quicklook-json
 qlimagesize
-suspicious-package 
+suspicious-package
 apparency
 quicklookase
 qlvideo)

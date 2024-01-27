@@ -26,6 +26,7 @@ package=(
     yarn # JavaScript package manager
     nvm # manage multiple node versions
     git-delta # better git diff using bat
+    starship # zsh prompt
 )
 
 install_brew_packages(){
