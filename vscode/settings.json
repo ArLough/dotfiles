@@ -1,34 +1,85 @@
 {
-    "git.enableSmartCommit": true,
-    "debug.onTaskErrors": "debugAnyway",
-    "workbench.iconTheme": "gruvbox-material-icon-theme",
-    "workbench.editor.highlightModifiedTabs": true,
-    "explorer.sortOrder": "type",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "apc.activityBar": {
+        "position": "top",
+        "size": 36
+    },
+    "apc.electron": {
+        "frame": false,
+        "titleBarStyle": "hidden",
+        "trafficLightPosition": {
+            "x": 9,
+            "y": 9
+        }
+    },
+    "apc.header": {
+        "height": 36
+    },
+    "apc.statusBar": {
+        "position": "editor-bottom"
+    },
+    "debug.console.fontFamily": "Source Code Pro, Monaco",
+    "errorLens.delay": 250,
+    "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 3,
+    "editor.fontFamily": "Source Code Pro, Monaco",
     "editor.fontSize": 16,
     "editor.fontWeight": 400,
-    "terminal.integrated.fontSize": 14,
-    "editor.unicodeHighlight.invisibleCharacters": true,
-    "editor.lineHeight": 1.6,
-    "workbench.tree.indent": 20,
-    "customizeUI.activityBarHideSettings": true,
-    "customizeUI.listRowHeight": 30,
-    "customizeUI.titleBar": "inline",
     "editor.guides.bracketPairs": "active",
-    "customizeUI.activityBar": "top",
-    "editor.minimap.showSlider": "always",
-    "workbench.list.smoothScrolling": true,
-    "editor.fontFamily": "Source Code Pro, Monaco",
-    "debug.console.fontFamily": "Source Code Pro, Monaco",
-    "zenMode.centerLayout": false,
-    "zenMode.fullScreen": false,
-    "zenMode.hideLineNumbers": false,
+    "editor.lineHeight": 1.6,
+    "editor.minimap.autohide": true,
+    "editor.minimap.showSlider": "mouseover",
+    "editor.minimap.size": "proportional",
+    "editor.snippetSuggestions": "top",
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "editor.tabCompletion": "on",
+    "editor.hideCursorInOverviewRuler": true,
+    "explorer.openEditors.visible": 0,
+    "explorer.sortOrder": "type",
+    "files.associations": {
+        "*.json": "json"
+    },
+    "git.enableSmartCommit": true,
+    "telemetry.telemetryLevel": "off",
     "terminal.external.osxExec": "Iterm2.app",
+    "terminal.integrated.fontSize": 14,
+    "window.commandCenter": false,
+    "window.titleBarStyle": "native",
     "workbench.activityBar.location": "top",
-    "workbench.colorCustomizations": {
-        "editorCursor.foreground": "#ff9966",
-        "editorCursor.background": "#000000",
-        "terminalCursor.foreground": "#66ff99"
-      }
-    }
+    "workbench.colorTheme": "Ayu Dark",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.tabActionCloseVisibility": false,
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.iconTheme": "vsode-iconTheme",
+    "workbench.list.smoothScrolling": true,
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 20,
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false
+}
