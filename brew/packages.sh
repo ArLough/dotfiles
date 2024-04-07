@@ -20,6 +20,7 @@ package=(
     navi # suggest commands
     trash # moves a file to trash as opposed to rm which permanently deletes
     bat # better cat with syntax highlighting
+    eza # better ls
     thefuck # correct last command
     zsh-syntax-highlighting # better zsh syntax highlighting
     zsh-autosuggestions # better zsh autosuggestions
@@ -27,6 +28,7 @@ package=(
     nvm # manage multiple node versions
     git-delta # better git diff using bat
     starship # zsh prompt
+    antigen # plugin manager for oh-my-zsh
 )
 
 install_brew_packages(){

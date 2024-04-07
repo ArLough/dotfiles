@@ -1,3 +1,5 @@
+source /usr/local/share/antigen/antigen.zsh
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -13,20 +15,30 @@ for file in ~/dotfiles/{aliases,functions}; do
 done;
 unset file;
 
-# Oh-my-zsh
-ZSH_THEME=""
+autoload -Uz compinit
+compinit
 
-plugins=(git
-		colorize
-		z
-		thefuck
-		zsh-autosuggestions
-		zsh-syntax-highlighting
-		fzf-tab)
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
 
-source $ZSH/oh-my-zsh.sh
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle Aloxaf/fzf-tab
+antigen bundle git
+antigen bundle MichaelAquilina/zsh-you-should-use
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle thefuck
+antigen bundle z
 
-ZSH_COLORIZE_TOOL=chroma
+# Load the theme.
+antigen theme https://github.com/starship/starship
+starship preset nerd-font-symbols -o ~/.config/starship.toml 
+
+# Tell Antigen that you're done.
+antigen apply
+
+eval $(thefuck --alias)
+eval "$(starship init zsh)"
 
 export LANG=en_US.UTF-8
 
@@ -35,12 +47,5 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nano'
 fi
-
-eval $(thefuck --alias)
-eval "$(starship init zsh)"
-
-source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOME/fzf-tab/fzf-tab.zsh
 
 export PATH="/usr/local/sbin:$PATH"
