@@ -4,12 +4,12 @@ casks = (
 # Productivity
 1password # Password Manager
 1password-cli
-obsidian # Notes/Second Brain
+obsidian # Notes
 spotify # Music
 discord
 zoom
 visual-studio-code
-iterm2 # Terminal
+ghostty # Terminal
 jetbrains-toolbox # Jetbrains installer
 docker # Containerize for deployment
 iina # Mac-like Video Player
@@ -18,9 +18,6 @@ itsycal # Nice calendar in menu bar
 cheatsheet # CMD to pull up shortcuts
 MonitorControl # Manage brightness on external display
 hiddenbar # Hide some menu bar items
-keka # Unarchiver
-rectangle # Window Manager
-authy # 2fa
 qlcolorcode
 qlstephen
 qlmarkdown
