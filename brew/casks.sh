@@ -9,7 +9,6 @@ obsidian # Notes/Second Brain
 # Entertainment
 spotify # Music
 steam # Gaming
-# minecraft
 # Communication
 slack
 discord
@@ -35,17 +34,11 @@ MonitorControl # Manage brightness on external display
 hiddenbar # Hide some menu bar items
 keka # Unarchiver
 rectangle # Window Manager
-# espanso # text expansion
 authy # 2fa
 google-backup-and-sync # backup & sync
-# coconutbattery # battery health utility
-# shottr # Screenshot Utility
 # daisydisk # Disk Manager
-# shifty # Fine Grained Night Shift control
-# lulu # Firewall
 # Misc. applications
 brooklyn # Screensaver
-copilot # Finance app
 # Quicklook Plugins
 qlcolorcode
 qlstephen

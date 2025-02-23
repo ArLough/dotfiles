@@ -15,7 +15,7 @@ package=(
     htop # better top - interactive process viewer
     tldr # tldr of man pages
     bash # macos bash is old
-    zsh # my preffered shell
+    zsh # my preferred shell
     youtube-dl # dowload yt videos from command line
     navi # suggest commands
     trash # moves a file to trash as opposed to rm which permanently deletes

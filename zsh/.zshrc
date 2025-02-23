@@ -48,3 +48,7 @@ else
 fi
 
 export PATH="/usr/local/sbin:$PATH"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"

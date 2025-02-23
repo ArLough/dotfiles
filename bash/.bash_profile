@@ -22,3 +22,5 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"source/Users/aidanloughney/.bash_profile
 
 
+
+. "$HOME/.atuin/bin/env"
