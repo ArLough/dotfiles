@@ -1,5 +1,4 @@
 apps=(
-	1447330651 # copilot money
     1502839586 # hand mirror
 )
 
