@@ -6,6 +6,7 @@ set -o pipefail
 
 . macos/setup.sh
 . macos/mas.sh
+. brew/install-homebrew.sh
 . brew/packages.sh
 . brew/casks.sh
 . brew/fonts.sh
@@ -23,6 +24,13 @@ wait_input() {
 
 main() {
 	info "Installing ..."
+
+ 	info "################################################################################"
+	info "Homebrew"
+	info "################################################################################"
+	wait_input
+    install_homebrew
+	success "Finished installing Homebrew"
 
 	info "################################################################################"
 	info "Homebrew Packages"
