@@ -16,4 +16,3 @@ Dotfiles repo to track a few of my configurations, work in progress
 ## Other Stuff I Found Helpful!
 - https://matty.dev/blog/2024-07-12-dot-file-management
 - https://www.jakewiesler.com/blog/managing-dotfiles
-  - Taught me how to use stow and symlink files
