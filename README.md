@@ -6,7 +6,7 @@ Dotfiles repo to track a few of my configurations, work in progress
 
 1. [Add ssh key to github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?tool=cli)
 2. Clone repo
-3. run `./install.sh`
+3. run `chmod +x install.sh ./install.sh`
 
 ## Points of interest
  - macos/brew-cask.sh contains my mac apps I use
