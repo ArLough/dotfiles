@@ -1,4 +1,5 @@
 package=(
+    stow 
     coreutils
     cask # to install casks
     git # scm
@@ -24,7 +25,7 @@ package=(
     thefuck # correct last command
     zsh-syntax-highlighting # better zsh syntax highlighting
     zsh-autosuggestions # better zsh autosuggestions
-    yarn # JavaScript package manager
+    pnpm # JS package manager
     nvm # manage multiple node versions
     git-delta # better git diff using bat
     starship # zsh prompt
