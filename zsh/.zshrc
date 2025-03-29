@@ -10,7 +10,7 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Load the shell dotfiles, and then some:
-for file in ~/dotfiles/{aliases,functions}; do
+for file in ~/dotfiles/zsh/{aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -48,7 +48,3 @@ else
 fi
 
 export PATH="/usr/local/sbin:$PATH"
-
-. "$HOME/.atuin/bin/env"
-
-eval "$(atuin init zsh)"

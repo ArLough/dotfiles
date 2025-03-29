@@ -53,19 +53,15 @@ defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
+# Set appearence to dark
+defaults write -g AppleInterfaceStyle Dark
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
-# Trackpad: map bottom right corner to right-click
-#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick 
--int 2
-#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-#defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
-#defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
-
 # Disable “natural” (Lion-style) scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+# defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -74,11 +70,8 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+# defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true #broken
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -92,17 +85,14 @@ defaults write NSGlobalDomain AppleMetricUnits -bool false
 # Energy saving                                                               #
 ###############################################################################
 
-# Enable lid wakeup
-#sudo pmset -a lidwake 1
-
 # Sleep the display after 10 minutes
-sudo pmset -a displaysleep 10
+# sudo pmset -a displaysleep 10 # broken
 
 # Disable machine sleep while charging
 # sudo pmset -c sleep 0
 
 # Set machine sleep to 5 minutes on battery
-sudo pmset -b sleep 5
+# sudo pmset -b sleep 5 #broken
 
 ###############################################################################
 # Screen                                                                      #
@@ -150,9 +140,6 @@ defaults write com.apple.assistant.support "Assistant Enabled" -bool false
 # Finder                                                                      #
 ###############################################################################
 
-# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
-# defaults write com.apple.finder QuitMenuItem -bool true
-
 # Set Desktop as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
@@ -165,7 +152,7 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show hidden files by default
-#defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -239,6 +226,9 @@ defaults write com.apple.dock autohide-time-modifier -float 0.1
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Position dock to the right
+defaults write com.apple.dock orientation right
+
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
@@ -246,7 +236,7 @@ defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.dock show-recents -bool false
 
 # Reset Launchpad, but keep the desktop wallpaper intact
-find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete
+# find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete #broken
 
 # Hot corners
 # Possible values:
@@ -347,26 +337,26 @@ defaults write com.google.Chrome DisablePrintPreview -bool true
 # Expand the print dialog by default
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-info "killing affected applications"
-for app in "Activity Monitor" \
-	"Address Book" \
-	"Calendar" \
-	"cfprefsd" \
-	"Contacts" \
-	"Dock" \
-	"Finder" \
-	"Google Chrome" \
-	"Mail" \
-	"Messages" \
-	"Photos" \
-	"Safari" \
-	"SystemUIServer" \
-	"Terminal" \
-	"iCal"; do
-	killall "${app}" &> /dev/null
-done
+# ###############################################################################
+# # Kill affected applications                                                  #
+# ###############################################################################
+# info "killing affected applications"
+# for app in "Activity Monitor" \
+# 	"Address Book" \
+# 	"Calendar" \
+# 	# "cfprefsd" \
+# 	"Contacts" \
+# 	"Dock" \
+# 	"Finder" \
+# 	"Google Chrome" \
+# 	"Mail" \
+# 	"Messages" \
+# 	"Photos" \
+# 	"Safari" \
+# 	"SystemUIServer" \
+# 	"Terminal" \
+# 	"iCal"; do
+# 	killall "${app}" &> /dev/null
+# done
 
 }

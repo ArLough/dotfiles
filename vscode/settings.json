@@ -23,24 +23,6 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "apc.activityBar": {
-    "position": "top",
-    "size": 36
-  },
-  "apc.electron": {
-    "frame": false,
-    "titleBarStyle": "hidden",
-    "trafficLightPosition": {
-      "x": 9,
-      "y": 9
-    }
-  },
-  "apc.header": {
-    "height": 36
-  },
-  "apc.statusBar": {
-    "position": "editor-bottom"
-  },
   "debug.console.fontFamily": "Source Code Pro, Monaco",
   "errorLens.delay": 250,
   "editor.cursorSmoothCaretAnimation": "on",
@@ -65,8 +47,8 @@
   },
   "git.enableSmartCommit": true,
   "telemetry.telemetryLevel": "off",
-  "terminal.external.osxExec": "Iterm2.app",
-  "terminal.integrated.fontSize": 14,
+  "terminal.external.osxExec": "Ghostty.app",
+  "terminal.integrated.fontSize": 16,
   "window.commandCenter": false,
   "window.titleBarStyle": "native",
   "workbench.activityBar.location": "top",

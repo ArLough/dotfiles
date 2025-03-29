@@ -11,7 +11,11 @@ alias ....="cd ../../.."
 
 # Better list
 alias ls="ls -CF"
-alias lsa="ls -a -CF"
+alias lsa="ls -aCF"
+alias lsd="ls -d */"
+
+# Better cat
+alias cat="bat"
 
 # Better clear
 alias c='clear'

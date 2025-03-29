@@ -4,12 +4,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-. macos/setup.sh
-. macos/mas.sh
-. brew/install-homebrew.sh
-. brew/packages.sh
-. brew/casks.sh
-. brew/fonts.sh
+. scripts/setup.sh
 . scripts/utils.sh
 . scripts/stow.sh
 
@@ -23,49 +18,27 @@ wait_input() {
 }
 
 main() {
-	info "Installing ..."
+	info "Starting ..."
 
- 	info "################################################################################"
-	info "Homebrew"
-	info "################################################################################"
-	wait_input
-    install_homebrew
+ 	info "Installing homebrew..."
+    if ! command -v brew &> /dev/null; then
+      echo "[Homebrew] Homebrew not found, installing..."
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    else
+      echo "[Homebrew] Homebrew is already installed."
+    fi
 	success "Finished installing Homebrew"
 
-	info "################################################################################"
-	info "Homebrew Packages"
-	info "################################################################################"
-	wait_input
-    install_brew_packages
-	success "Finished installing Homebrew packages"
-
-	info "################################################################################"
-	info "Homebrew Fonts"
-	info "################################################################################"
-	wait_input
-	install_brew_fonts
-	success "Finished installing Homebrew fonts"
-
-	info "################################################################################"
-	info "MacOS Apps"
-	info "################################################################################"
-	wait_input
-	install_brew_casks
-    info "Installing mac apps from mac app store ..."
-	install_masApps
-	success "Finished installing macOS apps"
-
-	info "################################################################################"
-	info "Configuration"
-	info "################################################################################"
-	wait_input
+	info "Installing brewfile..."
+    brew bundle --file=~/dotfiles/Brewfile --verbose
+	success "Finished installing Brewfile"
 
     info "Configuring macos with prefered settings ..."
 	setup_macos
 	success "Finished configuring MacOS defaults. NOTE: A restart is needed"
 
-    info "Stowing dotfiles"
-	stow_dotfiles
+	info "Stowing dotfiles..."
+    stow_dotfiles
 	success "Finished stowing dotfiles"
 
 	success "Done"
