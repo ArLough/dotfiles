@@ -10,15 +10,11 @@
   	reword = commit --amend
   	# Undo last commit but keep changed files in stage
   	uncommit = reset --soft HEAD~1
-  	# Remove file(s) from Git but not from disk
-  	untrack = rm --cache --
 	# diff current branch with master
 	review = diff master...HEAD
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	# shows log filtered to my commits
 	mylog = log --oneline --reverse --author=\"$(git config user.name)\" | less +G
-	# stashes non staged changes - useful to test a changeset before a commit
-	ski = stash --keep-index
 [core]
 	editor = nano
 	excludesfile = ~/dotfiles/git/.global_gitignore

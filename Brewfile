@@ -5,7 +5,7 @@ tap "buo/cask-upgrade"
 cask_args appdir: "~/Applications"
 
 brew "cask" # to install casks
-brew "mas"
+brew "mas" # to install apps via mac app store
 
 brew "stow" 
 brew "coreutils"
@@ -26,6 +26,7 @@ brew "bat" # better cat with syntax highlighting
 brew "eza" # better ls
 brew "shellcheck"
 brew "duf" # disk usage
+brew "speedtest-cli"
 
 # Development
 brew "python3" # Python dev
