@@ -20,7 +20,6 @@ brew "wget" # internet file retriever
 brew "htop" # better top
 brew "tldr" # tldr of man pages
 brew "trash" # moves a file to trash as opposed to rm which permanently deletes
-brew "thefuck" # correct last command
 brew "git-delta" # better git diff using bat
 brew "bat" # better cat with syntax highlighting
 brew "eza" # better ls

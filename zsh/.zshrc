@@ -23,10 +23,8 @@ antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle Aloxaf/fzf-tab
-antigen bundle MichaelAquilina/zsh-you-should-use
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle thefuck
 antigen bundle z
 
 # Load the theme.
@@ -36,7 +34,6 @@ starship preset nerd-font-symbols -o ~/.config/starship.toml
 # Tell Antigen that you're done.
 antigen apply
 
-eval $(thefuck --alias)
 eval "$(starship init zsh)"
 
 export LANG=en_US.UTF-8
